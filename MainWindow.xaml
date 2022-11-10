@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentsBook"
         mc:Ignorable="d"
-        Title="Electronic Student's book" Height="600" Width="900" MaxWidth="1200" MaxHeight="800" MinWidth="900" MinHeight="600">
+        Title="Electronic Student's book" Height="600" Width="900" MaxWidth="1600" MaxHeight="900" MinWidth="900" MinHeight="600">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="30*"/>
@@ -13,19 +13,26 @@
             <ColumnDefinition Width="679*"/>
         </Grid.ColumnDefinitions>
         <TabControl ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="3" Margin="0,2,-1,2">
-            <TabItem Header="Home page" Width="180" Height="30" FontSize="16">
+            <TabItem Header="Home page" Width="150" Height="30" FontSize="16">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="Reading" Width="180" FontSize="16">
+            <TabItem Header="Reading" Width="150" FontSize="16">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="Dictionary" Width="180" FontSize="16">
+            <TabItem Header="Dictionary" Width="150" FontSize="16">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="Testing" Width="180" FontSize="16">
+            <TabItem Header="Testing" Width="150" FontSize="16">
                 <Grid Background="#FFE5E5E5">
                     <DockPanel LastChildFill="False"/>
                 </Grid>
+            </TabItem>
+            <TabItem Header="Testing" Width="150" FontSize="16">
+                <TabItem.Template>
+                    <ControlTemplate>
+                        <Button>Quit</Button>
+                    </ControlTemplate>
+                </TabItem.Template>
             </TabItem>
         </TabControl>
 
