@@ -20,14 +20,16 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
             <TabItem Header="Dictionary" Width="150" FontSize="16">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="DictionaryDataGrid" d:ItemsSource="{d:SampleData ItemCount=5}" ColumnWidth="220" IsSynchronizedWithCurrentItem="False"/>
+                </Grid>
             </TabItem>
-            <TabItem Header="Testing" Width="150" FontSize="16">
+            <TabItem Header="Testing" Width="150" FontSize="16" HorizontalAlignment="Left" Margin="0,-2,0,0">
                 <Grid Background="#FFE5E5E5">
                     <DockPanel LastChildFill="False"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Testing" Width="150" FontSize="16">
+            <TabItem Header="Testing" Width="150" FontSize="16" PreviewMouseDown="TabItem_PreviewMouseDown">
                 <TabItem.Template>
                     <ControlTemplate>
                         <Button>Quit</Button>

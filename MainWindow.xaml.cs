@@ -23,7 +23,13 @@ namespace StudentsBook
         public MainWindow()
         {
             InitializeComponent();
+
+            DictionaryDataGrid.ItemsSource = Dictionary.GetDictionaryList();
         }
 
+        private void TabItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
