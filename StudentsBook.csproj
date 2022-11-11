@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="english-language-learning-dark-background копия.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="english-language-learning-dark-background копия.png" />
+  </ItemGroup>
+
 </Project>
