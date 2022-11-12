@@ -22,36 +22,24 @@ namespace StudentsBook
 
         public static List<RusEngDictionary> GetDictionaryList()
         {
-            return new List<RusEngDictionary>(new RusEngDictionary[24] {
-            new RusEngDictionary("to work", "работать", "tuː wɜːk"),
-            new RusEngDictionary("B.", "One", "34 West Fifth Street, Apartment 67"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
-            new RusEngDictionary("D.", "Three", "78 South Ninth Street, Apartment 10"),
+            return new List<RusEngDictionary>(new RusEngDictionary[14] {
+            new RusEngDictionary("fee", "плата, платёж", "fiː"),
+            new RusEngDictionary("free-time activity", "занятия в свободное время", "friː-taɪm ækˈtɪvɪti"),
+            new RusEngDictionary("dormitory", "общежитие", "ˈdɔː.mɪ.tər.i"),
+            new RusEngDictionary("committee", "комитет", "kəˈmɪt.i"),
 
-            new RusEngDictionary("A.", "Zero", "12 North Third Street, Apartment 45"),
-            new RusEngDictionary("B.", "One", "34 West Fifth Street, Apartment 67"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
+            new RusEngDictionary("diverse", "разнообразный", "daɪˈvɜːs"),
+            new RusEngDictionary("compulsory", "обязательный", "kəmˈpʌl.sər.i"),
+            new RusEngDictionary("take part", "принимать участие", "teɪk pɑːt"),
+            new RusEngDictionary("take up", "занимать, принимать", "teɪk ʌp"),
 
-            new RusEngDictionary("A.", "Zero", "12 North Third Street, Apartment 45"),
-            new RusEngDictionary("B.", "One", "34 West Fifth Street, Apartment 67"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
+            new RusEngDictionary("take care of", "заботиться о", "teɪk keər əv"),
+            new RusEngDictionary("take place", "замещать, занимать место", "teɪk pleɪs"),
+            new RusEngDictionary("voluntary", "Two", "Three"),
+            new RusEngDictionary("rescue", "Two", "Three"),
 
-            new RusEngDictionary("A.", "Zero", "12 North Third Street, Apartment 45"),
-            new RusEngDictionary("B.", "One", "34 West Fifth Street, Apartment 67"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
-
-            new RusEngDictionary("A.", "Zero", "12 North Third Street, Apartment 45"),
-            new RusEngDictionary("B.", "One", "34 West Fifth Street, Apartment 67"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
-
-            new RusEngDictionary("A.", "Zero", "12 North Third Street, Apartment 45"),
-            new RusEngDictionary("B.", "One", "34 West Fifth Street, Apartment 67"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
-            new RusEngDictionary("C.", "Two", "56 East Seventh Street, Apartment 89"),
+            new RusEngDictionary("disabled", "Two", "Three"),
+            new RusEngDictionary("restriction", "Two", "Three"),
 
 
 
