@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Globalization;
 using System.Linq;
 using System.Text;
@@ -21,14 +22,18 @@ namespace StudentsBook
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static int rightAnswersCounter = 0; //поле с счётчиком ответов
+
         public MainWindow()
         {
             InitializeComponent();
 
-            DictionaryDataGrid.ItemsSource = Dictionary.GetDictionaryList();
+            //привязка словарного списка к DataGrid
+            DictionaryDataGrid.ItemsSource = RusEngDictionary.GetDictionaryList();
 
-            EnglishTextBlockFormatting();
-            RussianTextBlockFormatting();
+            //добавление форматированного текста в текстовые блоки главной страницы
+            TextFormatting.EnglishTextFormatting(EnglishTextBlock);
+            TextFormatting.RussianTextFormatting(RussianTextBlock);
         }
 
         private void TabItem_PreviewMouseDown(object sender, MouseButtonEventArgs e)
@@ -36,26 +41,29 @@ namespace StudentsBook
             System.Windows.Application.Current.Shutdown();
         }
 
-
-        /// <summary>
-        /// Добавление форматированного текста в текстовый блок с английским текстом
-        /// </summary>
-        public void EnglishTextBlockFormatting()
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            EnglishTextBlock.Text = string.Empty;
-            EnglishTextBlock.Inlines.Add("        Hello! Welcome to electronical English language learning course.\n");
-            EnglishTextBlock.Inlines.Add("        This learning material helps students to develop their abilities to learn English language. ");
-            EnglishTextBlock.Inlines.Add("The information-driven approach in learning inspires students to think about the world around them and building their creativity, participation and performance. ");
-            EnglishTextBlock.Inlines.Add("After all, it just can be fun!");
-        }
+            rightAnswersCounter = 0; //обнуление счётчика правильных ответов
 
-        public void RussianTextBlockFormatting()
-        {
-            RussianTextBlock.Text = string.Empty;
-            RussianTextBlock.Inlines.Add("        Привет! Добро пожаловать на электронный курс по обучению английскому языку.\n");
-            RussianTextBlock.Inlines.Add("        Данный учебный материал помогает ученикам развиваться в способности к обучению английскому языку. ");
-            RussianTextBlock.Inlines.Add("Информативный подход к обучению вдохновляет учеников задуматься об окружающем мире и помогает развивать креативность, заинтересованность и прилежность. ");
-            RussianTextBlock.Inlines.Add("В конце концов, такой процесс обучения может просто быть весёлым!");
+            // Словарь, в котором содержатся ответы на вопросы по чтению 
+            Dictionary<ComboBox, string> readingKeys = new Dictionary<ComboBox, string>()
+            {
+                  {keyComboBox1, "d) general information"}
+                , {keyComboBox2, "e) the first school"}
+                , {keyComboBox3, "b) free-time activities"}
+                , {keyComboBox4, "c) houses"}
+                , {keyComboBox5, "a) fees"}
+            };
+
+            foreach (ComboBox comboBox in readingKeys.Keys)
+            {
+                if(comboBox.Text == readingKeys[comboBox]) 
+                {
+                    rightAnswersCounter++;
+                }
+            }
+
+            new readingCheckWindow().ShowDialog();
         }
     }
 }
