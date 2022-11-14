@@ -27,19 +27,18 @@ namespace StudentsBook
             new RusEngDictionary("free-time activity", "занятия в свободное время", "friː-taɪm ækˈtɪvɪti"),
             new RusEngDictionary("dormitory", "общежитие", "ˈdɔː.mɪ.tər.i"),
             new RusEngDictionary("committee", "комитет", "kəˈmɪt.i"),
-
             new RusEngDictionary("diverse", "разнообразный", "daɪˈvɜːs"),
+
             new RusEngDictionary("compulsory", "обязательный", "kəmˈpʌl.sər.i"),
             new RusEngDictionary("take part", "принимать участие", "teɪk pɑːt"),
             new RusEngDictionary("take up", "занимать, принимать", "teɪk ʌp"),
-
             new RusEngDictionary("take care of", "заботиться о", "teɪk keər əv"),
             new RusEngDictionary("take place", "замещать, занимать место", "teɪk pleɪs"),
-            new RusEngDictionary("voluntary", "Two", "Three"),
-            new RusEngDictionary("rescue", "Two", "Three"),
 
-            new RusEngDictionary("disabled", "Two", "Three"),
-            new RusEngDictionary("restriction", "Two", "Three"),
+            new RusEngDictionary("voluntary", "добровольный", "ˈvɒləntəri"),
+            new RusEngDictionary("to rescue", "спасать", "tə ˈreskjuː"),
+            new RusEngDictionary("disabled", "инвалид", "dɪˈseɪbld"),
+            new RusEngDictionary("restriction", "запрет", "rɪˈstrɪkʃən"),
 
 
 

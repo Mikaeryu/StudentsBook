@@ -65,5 +65,15 @@ namespace StudentsBook
 
             new readingCheckWindow().ShowDialog();
         }
+
+        private void TestingStartButton_Click(object sender, RoutedEventArgs e)
+        {
+            HomePageTab.IsEnabled = false;
+            ReadingTab.IsEnabled = false;
+            DictionaryTab.IsEnabled = false;
+            TestingStartButton.IsEnabled = false;
+            TetingInfoLabel.IsEnabled = false;
+
+        }
     }
 }
