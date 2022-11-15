@@ -68,12 +68,17 @@ namespace StudentsBook
 
         private void TestingStartButton_Click(object sender, RoutedEventArgs e)
         {
-            HomePageTab.IsEnabled = false;
-            ReadingTab.IsEnabled = false;
-            DictionaryTab.IsEnabled = false;
-            TestingStartButton.IsEnabled = false;
-            TetingInfoLabel.IsEnabled = false;
+            SetTestingTabControls(false);
 
+        }
+
+        private void SetTestingTabControls(bool value)
+        {
+            HomePageTab.IsEnabled = value;
+            ReadingTab.IsEnabled = value;
+            DictionaryTab.IsEnabled = value;
+            TestingStartButton.IsEnabled = value;
+            TetingInfoLabel.IsEnabled = value;
         }
     }
 }

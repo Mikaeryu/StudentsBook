@@ -127,7 +127,7 @@
                                 <Label Content="Complete the words in the sentences." Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="1. We have our chemistry lessons in a l_________" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox1" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) laboratory"/>
                                         <ComboBoxItem Content="b) lakeshores"/>
                                         <ComboBoxItem Content="c) lampshells"/>
@@ -137,7 +137,7 @@
 
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="2. Our school has got three tennis c_____" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox2" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) cables"/>
                                         <ComboBoxItem Content="b) canons"/>
                                         <ComboBoxItem Content="c) courts"/>
@@ -147,7 +147,7 @@
                                 
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="3. There is a football p____" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox3" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) packs"/>
                                         <ComboBoxItem Content="b) pitch"/>
                                         <ComboBoxItem Content="c) pages"/>
@@ -157,7 +157,7 @@
 
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="4. I get books from school l______" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox4" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) letters"/>
                                         <ComboBoxItem Content="b) lemures"/>
                                         <ComboBoxItem Content="c) ladders"/>
@@ -169,7 +169,7 @@
                                 <Label Content="Complete the verbs in the sentences." Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="5. I want to take ________ photography." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox5" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) part in"/>
                                         <ComboBoxItem Content="b) up"/>
                                         <ComboBoxItem Content="c) care of"/>
@@ -179,7 +179,7 @@
 
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="6. When I'm ill, my mom takes ________ me." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox6" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) part in"/>
                                         <ComboBoxItem Content="b) up"/>
                                         <ComboBoxItem Content="c) care of"/>
@@ -189,7 +189,7 @@
 
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="7. I'd like to take ________ karate or judo." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox7" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) part in"/>
                                         <ComboBoxItem Content="b) up"/>
                                         <ComboBoxItem Content="c) care of"/>
@@ -199,7 +199,7 @@
 
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="8. When my neighbour is away, I take ________ of his dog." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox8" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) part in"/>
                                         <ComboBoxItem Content="b) up"/>
                                         <ComboBoxItem Content="c) care of"/>
@@ -209,7 +209,7 @@
 
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="9. He'd like to take ________ in the concert." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox9" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) part in"/>
                                         <ComboBoxItem Content="b) up"/>
                                         <ComboBoxItem Content="c) care of"/>
@@ -219,11 +219,73 @@
 
                                 <DockPanel Height="36" Margin="0,4,0,0">
                                     <Label Content="10. The school dance takes ________ in the gym." FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
-                                    <ComboBox Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                    <ComboBox x:Name="testComboBox10" Width="279" Margin="-600,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
                                         <ComboBoxItem Content="a) part in"/>
                                         <ComboBoxItem Content="b) up"/>
                                         <ComboBoxItem Content="c) care of"/>
                                         <ComboBoxItem Content="d) place"/>
+                                    </ComboBox>
+                                </DockPanel>
+
+                                <!-- Section 3 -->
+                                <Label Content="Choose the correct word." Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="11-12. Would you ________" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox11" Width="88" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="-1400,0,0,0">
+                                        <ComboBoxItem Content="a) love"/>
+                                        <ComboBoxItem Content="b) like"/>
+                                    </ComboBox>
+                                    <Label Content="to ________" FontSize="18" Background="#B2FFFFFF" Width="103" Margin="-1200,0,0,0"></Label>
+                                    <ComboBox x:Name="testComboBox12" Width="102" Margin="-1150,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) go"/>
+                                        <ComboBoxItem Content="b) going"/>
+                                    </ComboBox>
+                                    <Label Content="to the school dance this weekend?" FontSize="18" Background="#B2FFFFFF" Width="330" Margin="-850,0,0,0"></Label>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="13-18. Thanks, but i'd ________" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox13" Width="106" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="-1325,0,0,0">
+                                        <ComboBoxItem Content="a) rather"/>
+                                        <ComboBoxItem Content="b) prefer"/>
+                                    </ComboBox>
+                                    <Label Content="go to the cinema.I love ________" FontSize="18" Background="#B2FFFFFF" Width="241" Margin="-1000,0,0,0"></Label>
+                                    <ComboBox x:Name="testComboBox14" Width="100" Margin="-760,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) go"/>
+                                        <ComboBoxItem Content="b) going"/>
+                                    </ComboBox>
+                                    <Label Content="out with my friends but I prefer ________" FontSize="18" Background="#B2FFFFFF" Width="330" Margin="-340,0,0,0"></Label>
+                                    <ComboBox x:Name="testComboBox15" Width="150" Margin="-155,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) watch"/>
+                                        <ComboBoxItem Content="b) watching"/>
+                                    </ComboBox>
+                                </DockPanel>
+                                <DockPanel>
+                                    <Label Content="films to ___________________________ .I" FontSize="18" Background="#B2FFFFFF" Width="197"/>
+                                    <ComboBox x:Name="testComboBox16" Width="102" Margin="-155,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) dance"/>
+                                        <ComboBoxItem Content="b) dancing"/>
+                                    </ComboBox>
+                                    <ComboBox x:Name="testComboBox17" Width="145" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="-10,0,0,0">
+                                        <ComboBoxItem Content="a) don't stand"/>
+                                        <ComboBoxItem Content="b) can't"/>
+                                    </ComboBox>
+                                    <ComboBox x:Name="testComboBox18" Width="102" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="10,0,0,0">
+                                        <ComboBoxItem Content="a) be"/>
+                                        <ComboBoxItem Content="b) being"/>
+                                    </ComboBox>
+                                    <Label Content="in noisy places." FontSize="18" Background="#B2FFFFFF" Width="152" Margin="-430,0,0,0"/>
+                                </DockPanel>
+
+                                <DockPanel Height="36" Margin="0,4,0,0">
+                                    <Label Content="19-20. I ________________________ mind that - I love __________________________ to clubs and discos!" FontSize="18" Background="#B2FFFFFF" Width="894"></Label>
+                                    <ComboBox x:Name="testComboBox19" Width="93" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True" Margin="-1560,0,0,0">
+                                        <ComboBoxItem Content="a) don't"/>
+                                        <ComboBoxItem Content="b) can't"/>
+                                    </ComboBox>
+                                    <ComboBox x:Name="testComboBox20" Width="97" Margin="-1230,0,0,0" FontSize="18" Padding="6,6,6,6" ScrollViewer.CanContentScroll="True">
+                                        <ComboBoxItem Content="a) go"/>
+                                        <ComboBoxItem Content="b) going"/>
                                     </ComboBox>
                                 </DockPanel>
                             </StackPanel> 
