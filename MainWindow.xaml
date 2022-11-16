@@ -118,7 +118,7 @@
                     <ScrollViewer Margin="66,10,67,10">
                         <StackPanel Height="2291" Width="1044">
                             
-                            <Label x:Name="TetingInfoLabel" Content="Другие вкладки будут заблокированы, начать тестирование?" Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
+                            <Label x:Name="TestingInfoLabel" Content="Другие вкладки будут заблокированы, начать тестирование?" Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
                             <Button x:Name="TestingStartButton" Height="40" Width="193" DockPanel.Dock="Bottom" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,12,0,0" Content="Начать тестирование" Padding="5,5,5,5" ScrollViewer.CanContentScroll="True" FontSize="18" HorizontalAlignment="Left" Click="TestingStartButton_Click"/>
 
 

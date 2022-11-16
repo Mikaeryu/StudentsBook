@@ -68,17 +68,51 @@ namespace StudentsBook
 
         private void TestingStartButton_Click(object sender, RoutedEventArgs e)
         {
-            SetTestingTabControls(false);
+            SetTestingTabControlsActive(false);
 
+            Dictionary<ComboBox, string> testingKeys = new Dictionary<ComboBox, string>()
+            {
+                  {testComboBox1, "a) laboratory"}
+                , {testComboBox1, "c) courts"} //CONTINUE
+                , {testComboBox3, "b) pitch"}
+                , {testComboBox4, "d) library"}
+                , {testComboBox5, "b) up"}
+                , {testComboBox6, "c) care of"}
+                , {testComboBox7, "b) up"}
+                , {testComboBox8, "c) care of"}
+                , {testComboBox9, "a) part in"}
+                , {testComboBox10, "d) place"}
+                , {testComboBox11, "b) like"}
+                , {testComboBox12, "a) go"}
+                , {testComboBox13, "a) rather"}
+                , {testComboBox14, "b) going"}
+                , {testComboBox15, "b) watching"}
+                , {testComboBox16, "b) dancing"}
+                , {testComboBox17, "a) don't stand"}
+                , {testComboBox18, "b) being"}
+                , {testComboBox19, "a) don't"}
+                , {testComboBox20, "b) going"}
+            };
         }
 
-        private void SetTestingTabControls(bool value)
+        private void SetTestingTabControlsActive(bool value)
         {
             HomePageTab.IsEnabled = value;
             ReadingTab.IsEnabled = value;
             DictionaryTab.IsEnabled = value;
             TestingStartButton.IsEnabled = value;
-            TetingInfoLabel.IsEnabled = value;
+            TestingInfoLabel.IsEnabled = value;
+
+            if (value == false) 
+            {
+                TestingInfoLabel.Visibility = Visibility.Collapsed;
+                TestingStartButton.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                TestingInfoLabel.Visibility = Visibility.Visible;
+                TestingStartButton.Visibility = Visibility.Visible;
+            }
         }
     }
 }
