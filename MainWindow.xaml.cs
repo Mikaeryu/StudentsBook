@@ -46,7 +46,7 @@ namespace StudentsBook
             rightAnswersCounter = 0; //обнуление счётчика правильных ответов
 
             // Словарь, в котором содержатся ответы на вопросы по чтению 
-            Dictionary<ComboBox, string> readingKeys = new Dictionary<ComboBox, string>()
+            Dictionary<ComboBox,string> readingKeys = new Dictionary<ComboBox, string>()
             {
                   {keyComboBox1, "d) general information"}
                 , {keyComboBox2, "e) the first school"}
@@ -63,36 +63,14 @@ namespace StudentsBook
                 }
             }
 
-            new readingCheckWindow().ShowDialog();
+            new TestCheckWindow().ShowDialog();
+
+
         }
 
         private void TestingStartButton_Click(object sender, RoutedEventArgs e)
         {
             SetTestingTabControlsActive(false);
-
-            Dictionary<ComboBox, string> testingKeys = new Dictionary<ComboBox, string>()
-            {
-                  {testComboBox1, "a) laboratory"}
-                , {testComboBox1, "c) courts"} //CONTINUE
-                , {testComboBox3, "b) pitch"}
-                , {testComboBox4, "d) library"}
-                , {testComboBox5, "b) up"}
-                , {testComboBox6, "c) care of"}
-                , {testComboBox7, "b) up"}
-                , {testComboBox8, "c) care of"}
-                , {testComboBox9, "a) part in"}
-                , {testComboBox10, "d) place"}
-                , {testComboBox11, "b) like"}
-                , {testComboBox12, "a) go"}
-                , {testComboBox13, "a) rather"}
-                , {testComboBox14, "b) going"}
-                , {testComboBox15, "b) watching"}
-                , {testComboBox16, "b) dancing"}
-                , {testComboBox17, "a) don't stand"}
-                , {testComboBox18, "b) being"}
-                , {testComboBox19, "a) don't"}
-                , {testComboBox20, "b) going"}
-            };
         }
 
         private void SetTestingTabControlsActive(bool value)
@@ -113,6 +91,65 @@ namespace StudentsBook
                 TestingInfoLabel.Visibility = Visibility.Visible;
                 TestingStartButton.Visibility = Visibility.Visible;
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            rightAnswersCounter = 0; //обнуление счётчика правильных ответов
+
+            // Словарь, в котором содержатся ответы на вопросы по чтению 
+            Dictionary<ComboBox,string> testingKeys = new Dictionary<ComboBox, string>()
+            {
+                  {testComboBox1, "a) laboratory"}
+                , {testComboBox1, "c) courts"}
+                , {testComboBox3, "b) pitch"}
+                , {testComboBox4, "d) library"}
+                , {testComboBox5, "b) up"}
+                , {testComboBox6, "c) care of"}
+                , {testComboBox7, "b) up"}
+                , {testComboBox8, "c) care of"}
+                , {testComboBox9, "a) part in"}
+                , {testComboBox10, "d) place"}
+                , {testComboBox11, "b) like"}
+                , {testComboBox12, "a) go"}
+                , {testComboBox13, "a) rather"}
+                , {testComboBox14, "b) going"}
+                , {testComboBox15, "b) watching"}
+                , {testComboBox16, "b) dancing"}
+                , {testComboBox17, "a) don't stand"}
+                , {testComboBox18, "b) being"}
+                , {testComboBox19, "a) don't"}
+                , {testComboBox20, "b) going"}
+            };
+
+            foreach (ComboBox comboBox2 in testingKeys.Keys)
+            {
+                if (comboBox2.Text == testingKeys[comboBox2])
+                {
+                    rightAnswersCounter++;
+                }
+            }
+            
+
+            TestCheckWindow testingCheckWindow = new TestCheckWindow();
+            if (MainWindow.rightAnswersCounter >= 12)
+            {
+                testingCheckWindow.TextBlockTextChange($"{rightAnswersCounter} right answers out of 20. Nice try!");
+            }
+            else if (MainWindow.rightAnswersCounter >=16)
+            {
+                testingCheckWindow.TextBlockTextChange($"{rightAnswersCounter} right answers out of 20. Good result!");
+            }
+            else if (MainWindow.rightAnswersCounter >=19)
+            {
+                testingCheckWindow.TextBlockTextChange($"{rightAnswersCounter} right answers out of 20. Perfect result!");
+            }
+            else
+            {
+                testingCheckWindow.TextBlockTextChange($"{rightAnswersCounter} right answers out of 20. You should try better!");
+            }
+
+            testingCheckWindow.ShowDialog();
         }
     }
 }

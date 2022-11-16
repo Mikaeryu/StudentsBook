@@ -15,35 +15,41 @@ using System.Windows.Shapes;
 namespace StudentsBook
 {
     /// <summary>
-    /// Interaction logic for readingCheckWindow.xaml
+    /// Interaction logic for TestCheckWindow.xaml
     /// </summary>
-    public partial class readingCheckWindow : Window
+    public partial class TestCheckWindow : Window
     {
-        public readingCheckWindow()
+        public static TestCheckWindow testCheckWindowInstance = new TestCheckWindow();
+        public TestCheckWindow()
         {
             InitializeComponent();
 
             if (MainWindow.rightAnswersCounter == 3)
             {
-                readingCheckTextBlock.Text = $"{MainWindow.rightAnswersCounter} out of 5. Nice try!";
+                TestingCheckTextBlock.Text = $"{MainWindow.rightAnswersCounter} right answers out of 5. Nice try!";
             }
             else if (MainWindow.rightAnswersCounter == 4)
             {
-                readingCheckTextBlock.Text = $"{MainWindow.rightAnswersCounter} out of 5. Good result!";
+                TestingCheckTextBlock.Text = $"{MainWindow.rightAnswersCounter} right answers out of 5. Good result!";
             }
             else if (MainWindow.rightAnswersCounter == 5)
             {
-                readingCheckTextBlock.Text = $"{MainWindow.rightAnswersCounter} out of 5. Perfect result!";
+                TestingCheckTextBlock.Text = $"{MainWindow.rightAnswersCounter} right answers out of 5. Perfect result!";
             }
             else
             {
-                readingCheckTextBlock.Text = $"{MainWindow.rightAnswersCounter} out of 5. You should try better!";
+                TestingCheckTextBlock.Text = $"{MainWindow.rightAnswersCounter} right answers out of 5. You should try better!";
             }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        public void TextBlockTextChange(string text)
+        {
+            TestingCheckTextBlock.Text = text;
         }
     }
 }
