@@ -27,6 +27,7 @@ namespace StudentsBook
         public MainWindow()
         {
             InitializeComponent();
+            TestingStackPanel.Visibility = Visibility.Hidden;
 
             //привязка словарного списка к DataGrid
             DictionaryDataGrid.ItemsSource = RusEngDictionary.GetDictionaryList();
@@ -75,6 +76,7 @@ namespace StudentsBook
 
         private void SetTestingTabControlsActive(bool value)
         {
+
             HomePageTab.IsEnabled = value;
             ReadingTab.IsEnabled = value;
             DictionaryTab.IsEnabled = value;
@@ -83,11 +85,13 @@ namespace StudentsBook
 
             if (value == false) 
             {
+                TestingStackPanel.Visibility= Visibility.Visible;
                 TestingInfoLabel.Visibility = Visibility.Collapsed;
                 TestingStartButton.Visibility = Visibility.Collapsed;
             }
             else
             {
+                TestingStackPanel.Visibility = Visibility.Hidden;
                 TestingInfoLabel.Visibility = Visibility.Visible;
                 TestingStartButton.Visibility = Visibility.Visible;
             }
@@ -101,7 +105,7 @@ namespace StudentsBook
             Dictionary<ComboBox,string> testingKeys = new Dictionary<ComboBox, string>()
             {
                   {testComboBox1, "a) laboratory"}
-                , {testComboBox1, "c) courts"}
+                , {testComboBox2, "c) courts"}
                 , {testComboBox3, "b) pitch"}
                 , {testComboBox4, "d) library"}
                 , {testComboBox5, "b) up"}
@@ -109,7 +113,7 @@ namespace StudentsBook
                 , {testComboBox7, "b) up"}
                 , {testComboBox8, "c) care of"}
                 , {testComboBox9, "a) part in"}
-                , {testComboBox10, "d) place"}
+                , {testComboBox10, "d) place"} 
                 , {testComboBox11, "b) like"}
                 , {testComboBox12, "a) go"}
                 , {testComboBox13, "a) rather"}
@@ -122,9 +126,9 @@ namespace StudentsBook
                 , {testComboBox20, "b) going"}
             };
 
-            foreach (ComboBox comboBox2 in testingKeys.Keys)
+            foreach (ComboBox comboBox in testingKeys.Keys)
             {
-                if (comboBox2.Text == testingKeys[comboBox2])
+                if (comboBox.Text == testingKeys[comboBox])
                 {
                     rightAnswersCounter++;
                 }
@@ -150,6 +154,7 @@ namespace StudentsBook
             }
 
             testingCheckWindow.ShowDialog();
+            SetTestingTabControlsActive(true);
         }
     }
 }

@@ -115,14 +115,14 @@
             <TabItem x:Name="TestingTab" Header="🗹 Testing" Width="150" FontSize="16" HorizontalAlignment="Left" Margin="0,0,0,0" Height="32">
                 <Grid Background="#FFE5E5E5">
                     <DockPanel LastChildFill="False"/>
-                    <ScrollViewer Margin="66,10,67,10">
+                    <ScrollViewer x:Name="TestingTabScrollViewer" Margin="66,10,67,10">
                         <StackPanel Height="2291" Width="1044">
                             
                             <Label x:Name="TestingInfoLabel" Content="Другие вкладки будут заблокированы, начать тестирование?" Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
                             <Button x:Name="TestingStartButton" Height="40" Width="193" DockPanel.Dock="Bottom" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="0,12,0,0" Content="Начать тестирование" Padding="5,5,5,5" ScrollViewer.CanContentScroll="True" FontSize="18" HorizontalAlignment="Left" Click="TestingStartButton_Click"/>
 
 
-                            <StackPanel Margin="0,5,0,0">
+                            <StackPanel x:Name="TestingStackPanel" Margin="0,5,0,0">
                                 
                                 <Label Content="Complete the words in the sentences." Background="#B2FFFFFF" FontSize="20" Height="39" FontWeight="Bold" Width="657" HorizontalAlignment="Left"/>
                                 <DockPanel Height="36" Margin="0,4,0,0">
